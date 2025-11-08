@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Monetiq - Sign up</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+
+  <div class="auth-card">
+    <h1 class="main-title">Monetiq</h1>
+    <h2>Create account</h2>
+
+    <form id="signupForm" class="auth-form">
+      <label for="signup-username" class="label">Username</label>
+      <input id="signup-username" name="username" type="text" required autocomplete="username">
+
+      <label for="signup-password" class="label">Password</label>
+      <input id="signup-password" name="password" type="password" required autocomplete="new-password">
+
+      <button type="submit" class="btn full">Sign up</button>
+      <div id="signup-error" class="error-message" aria-live="polite"></div>
+      <p class="muted small">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
